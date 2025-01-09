@@ -71,6 +71,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Tailwind Styles */
 
 .app {

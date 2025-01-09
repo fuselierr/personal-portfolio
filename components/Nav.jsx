@@ -18,18 +18,18 @@ const Nav = () => {
         </Link>
 
         <div className="sm:flex hidden gap-6 items-center">
-            <Link href="/about" className="text-sm font-medium text-gray-700">
+            <a href="#about" className="text-sm font-medium text-gray-700">
                 About Me
-            </Link>
-            <Link href="/experience" className="text-sm font-medium text-gray-700">
+            </a>
+            <a href="#experience" className="text-sm font-medium text-gray-700">
                 Experience
-            </Link>
-            <Link href="/projects" className="text-sm font-medium text-gray-700">
+            </a>
+            <a href="#projects" className="text-sm font-medium text-gray-700">
                 Projects
-            </Link>
-            <Link href="/contact" className="text-sm font-medium text-gray-700">
+            </a>
+            <a href="#contact" className="text-sm font-medium text-gray-700">
                 Contact
-            </Link>
+            </a>
 
             <button type="button" className="outline_btn">
                 Resume/CV

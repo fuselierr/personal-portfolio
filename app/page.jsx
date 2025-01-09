@@ -8,10 +8,18 @@ const Page = () => {
   return (
     <section className="w-full flex-center flex-col">
         <Home/>
-        <About/>
-        <Experience/>
-        <Projects/>
-        <Contact/>
+        <section id="about">
+          <About/>
+        </section>
+        <section id="experience">
+          <Experience/>
+        </section>
+        <section id="projects">
+          <Projects/>
+        </section>
+        <section id="contact">
+          <Contact/>
+        </section>
     </section>
   )
 }
