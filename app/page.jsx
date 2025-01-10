@@ -26,7 +26,7 @@ const Page = () => {
         <section id="projects">
           <Projects/>
         </section>
-        <section id="contact" data-aos="fade-up" data-aos-mirror="true">
+        <section id="contact" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true">
           <Contact/>
         </section>
     </section>
