@@ -1,6 +1,7 @@
 import '@styles/globals.css';
 
 import Nav from '@components/Nav';
+import Footer from '@components/Footer';
 
 export const metadata = {
     title: "Mike Gao",
@@ -14,11 +15,11 @@ const RootLayout = ({ children }) => {
             <div className="main">
                 <div className="gradient"/>
             </div>
-
             <main className="app">
                 <Nav/>
                 {children}
             </main>
+            <Footer/>
         </body>
     </html>
   )
