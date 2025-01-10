@@ -16,22 +16,32 @@ const Nav = () => {
             /> */}
             <p className="logo_text">Mike Gao</p>
         </Link>
-
-        <div className="sm:flex hidden gap-6 items-center">
-            <a href="#about" className="text-sm font-medium text-gray-700">
+        <div className="sm:flex hidden gap-6">
+            <Link href="#about" className="text-sm font-medium text-gray-700">
                 About Me
-            </a>
-            <a href="#experience" className="text-sm font-medium text-gray-700">
+            </Link>
+            <Link href="#experience" className="text-sm font-medium text-gray-700">
                 Experience
-            </a>
-            <a href="#projects" className="text-sm font-medium text-gray-700">
+            </Link>
+            <Link href="#projects" className="text-sm font-medium text-gray-700">
                 Projects
-            </a>
-            <a href="#contact" className="text-sm font-medium text-gray-700">
+            </Link>
+            <Link href="#contact" className="text-sm font-medium text-gray-700">
                 Contact
-            </a>
+            </Link>
+        </div>
 
-            <button type="button" className="outline_btn">
+        <div className="sm:flex hidden gap-4 items-center">
+            <button onClick={() => window.open("https://github.com/fuselierr", "_blank")}>
+                <Image
+                    src='assets/icons/github.svg'
+                    alt='Github Icon'
+                    width={20}
+                    height={20}
+                    className='object-contain'
+                />
+            </button>
+            <button type="button" className="outline_btn" onClick={() => window.open('/Resume.pdf')}>
                 Resume/CV
             </button>
         </div>
