@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 
 const Nav = () => {
   return (
-    <nav className="flex-between w-full mb-16 pt-3">
+    <nav className="fixed top-0 left-0 bg-white/50 backdrop-blur-md flex-between w-full mb-16 shadow-md pt-3 px-6 py-3">
         <Link href="/" className="flex gap-2 flex-center">
             {/* <Image
                 alt="My Logo"
