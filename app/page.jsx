@@ -1,10 +1,19 @@
+"use client";
+
+import { useEffect } from 'react'
 import Home from '@components/Home'
 import About from '@components/About'
 import Experience from '@components/Experience'
 import Projects from '@components/Projects'
 import Contact from '@components/Contact'
+import AOS from 'aos'
 
 const Page = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1500
+    });
+  })
   return (
     <section className="w-full flex-center flex-col">
         <Home/>
@@ -17,7 +26,7 @@ const Page = () => {
         <section id="projects">
           <Projects/>
         </section>
-        <section id="contact">
+        <section id="contact" data-aos="fade-up" data-aos-mirror="true">
           <Contact/>
         </section>
     </section>

@@ -5,7 +5,7 @@ const About = () => {
             About Me
         </h2>
         <p className="desc text-center">
-            My name is mike gao and shit.
+            My name is mike gao and shit. I'm such a pro programmer and I deserve so much recognition its crazy why I'm not a billionare right now.
         </p>
     </section>
   )

@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 
 const Home = () => {
   return (
-    <section id="home" className="w-full flex-center flex-col">
+    <section id="home" className="w-full min-h-screen flex items-center justify-center flex-col">
         <h1 className="head_text text-center">
             <Typewriter
                 options = {{
