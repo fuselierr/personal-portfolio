@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { FormEvent, useState } from 'react'
 import Confetti from 'react-confetti'
@@ -85,4 +85,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contact;
