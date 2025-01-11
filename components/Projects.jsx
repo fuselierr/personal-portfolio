@@ -9,18 +9,21 @@ const Projects = () => {
     {
       title: "Timestamp",
       description: "On time in no time.",
+      image: '/assets/images/timestamp.png',
       technologies: ["Kotlin", "JetpackCompose", "Java", "AndroidStudio", "Firebase", "Gradle", "Postgresql", "Docker", "Nginx"],
       link: "https://git.uwaterloo.ca/mw2auyeu/team102-4",
     },
     {
       title: "Chess",
       description: "A full-scale web application with working chess computers. *The source code is not available due to UW academic policies.",
+      image: '/assets/images/chess.png',
       technologies: ["Cplusplus", "Python"],
       link: "https://uwaterloo.ca/secretariat/policies-guidelines-signing-procedures"
     },
     {
       title: "Recursive Terrain Generator",
       description: "I just love to generate terrain",
+      image: '/assets/images/chess.png',
       technologies: ["Java", "Javascript"],
       link: "https://github.com/fuselierr/Recursive-Terrain"
     }
@@ -34,11 +37,12 @@ const Projects = () => {
         </div>
         <div className="w-full grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} data-aos="flip-up" data-aos-duration="800">
+            <div key={index} data-aos="flip-up" data-aos-duration="800" data-aos-offset="200">
               <Project
                 key={index}
                 title={project.title}
                 description={project.description}
+                image={project.image}
                 technologies={project.technologies}
                 link={project.link}
               />

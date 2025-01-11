@@ -1,11 +1,23 @@
 "use client"
 
+import Image from 'next/image';
 import Icons from '@components/ui/Icons';
 
 const Project = ({title, description, image, technologies, link}) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer">
         <div className="project">
+            <div className="p-4">
+                <div className="relative w-full h-[400px] overflow-hidden">
+                    <Image 
+                        src={image}
+                        alt={title}
+                        layout="fill"
+                        objectFit="cover"
+                        className="rounded-xl"
+                    />
+                </div>
+            </div>
             <div className="project-content">
                 <h2 className="subhead_text">
                     {title}
