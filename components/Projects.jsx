@@ -1,7 +1,6 @@
 "use client"
 
 import Project from '@components/ui/Project.jsx'
-import AOS from 'aos'
 import 'aos/dist/aos.css'
 
 
@@ -11,33 +10,37 @@ const Projects = () => {
       title: "Timestamp",
       description: "On time in no time.",
       technologies: ["Kotlin", "JetpackCompose", "Java", "AndroidStudio", "Firebase", "Gradle", "Postgresql", "Docker", "Nginx"],
+      link: "https://git.uwaterloo.ca/mw2auyeu/team102-4",
     },
     {
       title: "Chess",
-      description: "A full-scale web application with working chess computers.",
+      description: "A full-scale web application with working chess computers. *The source code is not available due to UW academic policies.",
       technologies: ["Cplusplus", "Python"],
+      link: "https://uwaterloo.ca/secretariat/policies-guidelines-signing-procedures"
     },
     {
       title: "Recursive Terrain Generator",
       description: "I just love to generate terrain",
       technologies: ["Java", "Javascript"],
+      link: "https://github.com/fuselierr/Recursive-Terrain"
     }
   ];
   return (
     <section className="w-full flex-center flex-col py-16">
         <div>
-          <h1 className="head_text">
+          <h1 className="head_text mb-8">
             Projects
           </h1>
         </div>
-        <div className="grid-container w-full">
+        <div className="w-full grid grid-cols-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div data-aos="flip-up" data-aos-duration="800">
+            <div key={index} data-aos="flip-up" data-aos-duration="800">
               <Project
                 key={index}
                 title={project.title}
                 description={project.description}
                 technologies={project.technologies}
+                link={project.link}
               />
             </div>
           ))}
