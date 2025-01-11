@@ -1,5 +1,6 @@
 import '@styles/globals.css';
 
+import Background from '@components/ui/Background';
 import Nav from '@components/Nav';
 import Footer from '@components/Footer';
 
@@ -14,6 +15,7 @@ const RootLayout = ({ children }) => {
         <body>
             <div className="main">
                 <div className="gradient"/>
+                <Background/>
             </div>
             <main className="app">
                 <Nav/>
