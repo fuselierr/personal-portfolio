@@ -31,11 +31,15 @@ const Contact = () => {
     </div>
   ) : (
     <section className="w-full py-12">
-        <div className="py-4">
+      <div className="py-4">
           <h1 className="head_text">
             Let's get in touch!
           </h1>
-        </div>
+      </div>
+      <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
+        <h2 className="text-2xl font-bold mb-4">
+          My Socials
+        </h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group block py-2">
             <label htmlFor="name" className="block mb-2">Name:</label>
@@ -81,6 +85,7 @@ const Contact = () => {
             </button>
           </div>
         </form>
+      </div>
     </section>
   )
 }

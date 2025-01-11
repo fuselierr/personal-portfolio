@@ -10,12 +10,12 @@ const Projects = () => {
     {
       title: "Timestamp",
       description: "On time in no time.",
-      technologies: ["Kotlin", "Java", "Gradle"],
+      technologies: ["Kotlin", "JetpackCompose", "Java", "AndroidStudio", "Firebase", "Gradle", "Postgresql", "Docker", "Nginx"],
     },
     {
       title: "Chess",
       description: "A full-scale web application with working chess computers.",
-      technologies: ["C++", "Linux"],
+      technologies: ["Cplusplus", "Python"],
     },
     {
       title: "Recursive Terrain Generator",
@@ -32,7 +32,7 @@ const Projects = () => {
         </div>
         <div className="grid-container">
           {projects.map((project, index) => (
-            <div data-aos="flip-up" data-aos-duration="500" data-aos-offset="150">
+            <div data-aos="flip-up" data-aos-duration="800">
               <Project
                 key={index}
                 title={project.title}
