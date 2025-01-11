@@ -17,7 +17,7 @@ const Page = () => {
   })
   return (
     <section className="w-full flex-center flex-col">
-        <section id="home" data-aos="fade-down" data-aos-mirror="true">
+        <section id="home" data-aos="fade-down" data-aos-mirror="true" className="w-full min-h-screen">
           <Home/>
         </section>
         <section id="about" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" className="w-full">
