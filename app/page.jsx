@@ -20,16 +20,16 @@ const Page = () => {
         <section id="home" data-aos="fade-down" data-aos-mirror="true">
           <Home/>
         </section>
-        <section id="about" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true">
+        <section id="about" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" className="w-full">
           <About/>
         </section>
         <section id="experience" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true">
           <Experience/>
         </section>
-        <section id="projects" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true">
+        <section id="projects" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" className="w-full">
           <Projects/>
         </section>
-        <section id="contact" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true">
+        <section id="contact" data-aos="fade-up" data-aos-duration="1500" data-aos-mirror="true" className="w-full">
           <Contact/>
         </section>
     </section>

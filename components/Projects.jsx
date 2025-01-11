@@ -30,7 +30,7 @@ const Projects = () => {
             Projects
           </h1>
         </div>
-        <div className="grid-container">
+        <div className="grid-container w-full">
           {projects.map((project, index) => (
             <div data-aos="flip-up" data-aos-duration="800">
               <Project

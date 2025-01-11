@@ -36,11 +36,13 @@ const Contact = () => {
             Let's get in touch!
           </h1>
       </div>
-      <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
-        <h2 className="text-2xl font-bold mb-4">
-          My Socials
-        </h2>
-        <form onSubmit={handleSubmit}>
+      <div className="w-full flex flex-col lg:flex-row items-start justify-between gap-12">
+        <div>
+          <h2 className="text-2xl font-bold mb-4">
+            My Socials
+          </h2>
+        </div>
+        <form onSubmit={handleSubmit} className="w-full lg:w-1/3">
           <div className="form-group block py-2">
             <label htmlFor="name" className="block mb-2">Name:</label>
             <input
