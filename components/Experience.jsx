@@ -30,7 +30,7 @@ const Experience = () => {
   ]);
 
   return (
-    <section className="flex-center flex-col py-16 w-full max-w-screen-lg">
+    <section className="flex-center flex-col py-16 w-full max-w-screen-lg min-h-screen mt-20">
         <div>
           <h1 className="head_text text-center">
             Experience
@@ -41,7 +41,7 @@ const Experience = () => {
           <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
             {skills.map((skill, index) => (
               <div key={index}
-                className="p-6 hover:text-blue-500" data-aos="flip-left" data-aos-offset={160 + ((index) % 8) * 20} data-aos-duration="500">
+                className="p-6 hover:text-blue-500" data-aos="flip-left" data-aos-offset={160 + ((index) % 8) * 20} data-aos-duration="700">
                   <div className="flex justify-center items-center mb-2">
                     <img src={skill.icon} className=""/>
                   </div>

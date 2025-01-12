@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 const About = () => {
   return (
-    <section className="w-full min-h-screen py-16 flex flex-col items-center justify-center">
+    <section className="w-full min-h-screen max-h-screen py-16 flex flex-col items-center justify-center mt-20">
         <h2 className="head_text text-center mb-8">
             About Me
         </h2>

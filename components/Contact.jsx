@@ -31,7 +31,7 @@ const Contact = () => {
         <Confetti/>
     </div>
   ) : (
-    <section className="w-full py-12 flex flex-col items-center">
+    <section className="w-full py-12 flex flex-col items-center mt-20">
       <div className="py-4">
           <h1 className="head_text mb-8">
             Let's get in touch!
@@ -62,7 +62,7 @@ const Contact = () => {
               Shoot me a message!
           </h2>
           <div className="form-group block py-2">
-            <label htmlFor="name" className="block mb-2">Name:</label>
+            <label htmlFor="name" className="label font-semibold block mb-2">Name:</label>
             <input
               type="text"
               id="name"
@@ -76,7 +76,7 @@ const Contact = () => {
           </div>
 
           <div className="form-group block py-2">
-            <label htmlFor="email" className="block py-2">Email:</label>
+            <label htmlFor="email" className="label font-semibold block py-2">Email:</label>
             <input
               className="input w-full input-bordered input-primary rounded-lg border border-gray-400 p-2"
               value={email}
@@ -88,7 +88,7 @@ const Contact = () => {
 
           <div className="form-group block py-2">
             <label className="label font-semibold block py-2">
-              <span className="label-text">Message</span>
+              <span className="label-text">Message:</span>
             </label>
             <textarea
               className="textarea w-full textarea-primary h-48 rounded-lg border border-gray-400 p-2"

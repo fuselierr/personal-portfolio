@@ -21,7 +21,7 @@ const Home = () => {
         <Link href="#about">
         <div className="absolute bottom-5 left-0 right-0 mx-auto animate-bounce flex flex-col items-center">
           <h4 className="body_text text-center mb-1">
-            Psst! Click here!
+            Click here!
           </h4>
           <FaArrowDown className="w-6 h-6"/>
         </div>

@@ -29,7 +29,7 @@ const Projects = () => {
     }
   ];
   return (
-    <section className="min-h-screen flex-center flex-col py-16 justify-center">
+    <section className="flex-center flex-col py-16 justify-center mt-20">
         <div>
           <h1 className="head_text mb-8">
             Projects
