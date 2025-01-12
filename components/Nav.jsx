@@ -14,19 +14,19 @@ const Nav = () => {
                 height={30}
                 className="object-contain"
             /> */}
-            <p className="logo_text">Mike Gao</p>
+            <p className="logo_text hover:text-blue-500 duration-300">Mike Gao</p>
         </Link>
         <div className="sm:flex hidden gap-6">
-            <Link href="#about" className="text-sm font-medium text-gray-700">
+            <Link href="#about" className="text-sm font-medium text-gray-700 hover:text-black hover:translate-y-1 translate duration-300">
                 About Me
             </Link>
-            <Link href="#experience" className="text-sm font-medium text-gray-700">
+            <Link href="#experience" className="text-sm font-medium text-gray-700 hover:text-black hover:translate-y-1 translate duration-300">
                 Experience
             </Link>
-            <Link href="#projects" className="text-sm font-medium text-gray-700">
+            <Link href="#projects" className="text-sm font-medium text-gray-700 hover:text-black hover:translate-y-1 translate duration-300">
                 Projects
             </Link>
-            <Link href="#contact" className="text-sm font-medium text-gray-700">
+            <Link href="#contact" className="text-sm font-medium text-gray-700 hover:text-black hover:translate-y-1 translate duration-300">
                 Contact
             </Link>
         </div>
@@ -38,7 +38,7 @@ const Nav = () => {
                     alt='Github Icon'
                     width={20}
                     height={20}
-                    className='object-contain'
+                    className='object-contain hover:translate-y-1 duration-300'
                 />
             </button>
             <button type="button" className="outline_btn" onClick={() => window.open('/Resume.pdf')}>

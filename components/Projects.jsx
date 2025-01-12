@@ -8,7 +8,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Timestamp",
-      description: "On time in no time.",
+      description: "Timestamp is a time-management app that helps you organize your plans and events: On time in no time.",
       image: '/assets/images/timestamp.png',
       technologies: ["Kotlin", "JetpackCompose", "Java", "AndroidStudio", "Figma", "Firebase", "Gradle", "Postgresql", "Docker", "Nginx"],
       link: "https://git.uwaterloo.ca/mw2auyeu/team102-4",
@@ -22,8 +22,8 @@ const Projects = () => {
     },
     {
       title: "Recursive Terrain Generator",
-      description: "I just love to generate terrain",
-      image: '/assets/images/chess.png',
+      description: "A desktop program that mathematically generates terrain through algebraic formulas.",
+      image: '/assets/images/recursiveterrain.png',
       technologies: ["Java", "Javascript", "React", "Nextjs", "Tailwindcss", "apache"],
       link: "https://github.com/fuselierr/Recursive-Terrain"
     }
