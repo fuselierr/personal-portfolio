@@ -30,18 +30,18 @@ const Experience = () => {
   ]);
 
   return (
-    <section className="w-full flex-center flex-col py-16">
+    <section className="flex-center flex-col py-16 w-full max-w-screen-lg">
         <div>
-          <h1 className="head_text">
+          <h1 className="head_text text-center">
             Experience
           </h1>
-          <h2 className="subhead_text">
+          <h2 className="subhead_text text-center">
             Technical Skills
           </h2>
           <div className="grid grid-cols-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-4">
             {skills.map((skill, index) => (
               <div key={index}
-                className="p-6" data-aos="flip-left" data-aos-offset={160 + ((index) % 8) * 20} data-aos-duration="500">
+                className="p-6 hover:text-blue-500" data-aos="flip-left" data-aos-offset={160 + ((index) % 8) * 20} data-aos-duration="500">
                   <div className="flex justify-center items-center mb-2">
                     <img src={skill.icon} className=""/>
                   </div>
@@ -51,12 +51,6 @@ const Experience = () => {
                 </div>
             ))}
           </div>
-          <h2 className="subhead_text">
-            Job Experience
-          </h2>
-          <h2 className="subhead_text">
-            Education
-          </h2>
         </div>
     </section>
   )

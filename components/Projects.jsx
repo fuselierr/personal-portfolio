@@ -24,18 +24,18 @@ const Projects = () => {
       title: "Recursive Terrain Generator",
       description: "I just love to generate terrain",
       image: '/assets/images/chess.png',
-      technologies: ["Java", "Javascript", "React", "Nextjs", "Tailwindcss"],
+      technologies: ["Java", "Javascript", "React", "Nextjs", "Tailwindcss", "apache"],
       link: "https://github.com/fuselierr/Recursive-Terrain"
     }
   ];
   return (
-    <section className="w-full min-h-screen flex-center flex-col py-16 justify-center">
+    <section className="min-h-screen flex-center flex-col py-16 justify-center">
         <div>
           <h1 className="head_text mb-8">
             Projects
           </h1>
         </div>
-        <div className="w-full grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="w-full max-w-screen-2xl grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div key={index} data-aos="flip-up" data-aos-duration="800" data-aos-offset="200">
               <Project
