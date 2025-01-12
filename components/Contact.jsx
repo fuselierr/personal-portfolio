@@ -5,32 +5,38 @@ import Confetti from 'react-confetti'
 import { FaEnvelope, FaLinkedin, FaFacebook, FaDiscord } from 'react-icons/fa'
 
 const Contact = () => {
-  const [isSubmitted, setSubmitted] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [status, setStatus] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const formData = { name, email, message };
+
     try {
-      
+      const response = await fetch("/api/route", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setStatus("Message sent successfully!");
+      } else {
+        setStatus("Failed to send message.");
+      }
     } catch (error) {
-      
+      setStatus("Error sending message.");
     }
     
   }
 
 
-  return isSubmitted? (
-    <div>
-      <h1
-        className="text-center font-semibold text-3x1">
-          Message received, thanks!
-        </h1>
-        <Confetti/>
-    </div>
-  ) : (
+  return (
     <section className="w-full py-12 flex flex-col items-center mt-20">
       <div className="py-4">
           <h1 className="head_text mb-8">
@@ -104,6 +110,12 @@ const Contact = () => {
               Submit
             </button>
           </div>
+
+          {status && (
+            <div className="form-group mt-4">
+              <p className="text-sm text-gray-700">{status}</p>
+            </div>
+          )}
         </form>
       </div>
     </section>

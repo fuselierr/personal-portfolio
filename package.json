@@ -12,6 +12,7 @@
     "@tsparticles/react": "^3.0.0",
     "aos": "^2.3.4",
     "next": "15.1.4",
+    "nodemailer": "^6.9.16",
     "react": "^19.0.0",
     "react-confetti": "^6.2.2",
     "react-dom": "^19.0.0",
