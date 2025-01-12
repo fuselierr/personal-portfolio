@@ -9,7 +9,7 @@ const About = () => {
             About Me
         </h2>
         <div className="w-full flex flex-col md:flex-row items-center justify-center">
-          <div className="w-full md:w-1/3 flex items-center justify-center px-8 mt-8 md:mt-0">
+          <div className="w-full md:w-1/4 flex flex-col items-center justify-center px-8 mt-8 md:mt-0" data-aos="fade-right">
             <Image
               src='/assets/images/mapotofu.jpg'
               alt="mapo tofu"
@@ -17,15 +17,24 @@ const About = () => {
               height="400"
               className="max-w-full h-auto rounded-2xl shadow-lg"
             />
+            <p className="mt-4">
+              A pic of my mapo tofu for your visual enjoyment :)
+            </p>
           </div>
 
-          <div className="w-full md:w-1/3 flex flex-col items-start md:items-start px-8">
+          <div className="w-full md:w-1/4 flex flex-col items-start md:items-start px-8" data-aos="fade-left">
             <p className="desc">
                 Thanks for stopping by! I'm Mike, and I'm currently pursuing my Bachelor's of Computer Science at the University of Waterloo.
-                Currently, I'm working as a Research Developer at DupliCALL Co. When I'm not learning new tech skills, I love making music and 
-                learning traditional Chinese dishes. My favourite cuisine has to be from Sichuan.
+                Currently, I'm working as a Research Developer at DupliCALL Co.
             </p>
             <p className="desc">
+              I am super interested in AI and Language Models and how to integrate such models to solve complex problems.
+            </p>
+            <p className="desc">
+                When I'm not learning new tech skills, I love making music and 
+                learning traditional Chinese dishes. My favourite cuisine has to be from Sichuan.
+            </p>
+            <p className="desc mb-5">
               Enjoy your stay!
             </p>
           </div>
