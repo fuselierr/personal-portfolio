@@ -30,13 +30,13 @@ const Contact = () => {
         <Confetti/>
     </div>
   ) : (
-    <section className="w-full py-12">
+    <section className="w-full py-12 flex flex-col items-center">
       <div className="py-4">
           <h1 className="head_text">
             Let's get in touch!
           </h1>
       </div>
-      <div className="w-full flex flex-col lg:flex-row items-start justify-between gap-12">
+      <div className="w-full md:w-1/2 flex flex-col lg:flex-row items-start justify-between gap-12">
         <div>
           <h2 className="text-2xl font-bold mb-4">
             My Socials

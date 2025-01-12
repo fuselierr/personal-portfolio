@@ -8,7 +8,7 @@ const Project = ({title, description, image, technologies, link}) => {
     <a href={link} target="_blank" rel="noopener noreferrer">
         <div className="project">
             <div className="p-4">
-                <div className="relative w-full h-[400px] overflow-hidden">
+                <div className="relative w-full h-[300px] overflow-hidden">
                     <Image 
                         src={image}
                         alt={title}
