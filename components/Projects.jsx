@@ -10,21 +10,21 @@ const Projects = () => {
       title: "Timestamp",
       description: "On time in no time.",
       image: '/assets/images/timestamp.png',
-      technologies: ["Kotlin", "JetpackCompose", "Java", "AndroidStudio", "Firebase", "Gradle", "Postgresql", "Docker", "Nginx"],
+      technologies: ["Kotlin", "JetpackCompose", "Java", "AndroidStudio", "Figma", "Firebase", "Gradle", "Postgresql", "Docker", "Nginx"],
       link: "https://git.uwaterloo.ca/mw2auyeu/team102-4",
     },
     {
       title: "Chess",
       description: "A full-scale web application with working chess computers. *The source code is not available due to UW academic policies.",
       image: '/assets/images/chess.png',
-      technologies: ["Cplusplus", "Python"],
+      technologies: ["Cplusplus", "Python", "Flask"],
       link: "https://uwaterloo.ca/secretariat/policies-guidelines-signing-procedures"
     },
     {
       title: "Recursive Terrain Generator",
       description: "I just love to generate terrain",
       image: '/assets/images/chess.png',
-      technologies: ["Java", "Javascript"],
+      technologies: ["Java", "Javascript", "React", "Nextjs", "Tailwindcss"],
       link: "https://github.com/fuselierr/Recursive-Terrain"
     }
   ];

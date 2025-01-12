@@ -20,8 +20,10 @@ const Experience = () => {
     { name: "Next.js", icon: Icons({ name: "nextjs"})},
     { name: "Tailwindcss", icon: Icons({ name: "tailwindcss"})},
     { name: "Flask", icon: Icons({ name: "flask"})},
+    { name: "Django", icon: Icons({ name: "django"})},
     { name: "Docker", icon: Icons({ name: "docker"})},
     { name: "Firebase", icon: Icons({ name: "firebase" })},
+    { name: "Figma", icon: Icons({ name: "figma" })},
     { name: "Android Studio", icon: Icons({ name: "androidstudio"})},
     { name: "Jetpack Compose", icon: Icons({ name: "jetpackcompose"})},
     { name: "Google Cloud", icon: Icons({ name: "googlecloud"})},
@@ -44,7 +46,7 @@ const Experience = () => {
                     <img src={skill.icon} className=""/>
                   </div>
                   <div className="justify-center items-center">
-                    <h2 className="text-xl font-semibold">{skill.name}</h2>
+                    <h2 className="text-xl font-semibold text-center">{skill.name}</h2>
                   </div>
                 </div>
             ))}
