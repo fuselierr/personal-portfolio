@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from 'react'
-import Confetti from 'react-confetti'
+import validator from 'email-validator'
 import { FaEnvelope, FaLinkedin, FaFacebook, FaDiscord } from 'react-icons/fa'
 
 const Contact = () => {
@@ -9,9 +9,23 @@ const Contact = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
+  const [errors, setErrors] = useState({});
+
+  const validateForm = () => {
+    const errors = {};
+    if (!name.trim()) errors.name = "Name cannot be empty.";
+    if (!email.trim() || !validator.validate(email))
+      errors.email = "Invalid email address.";
+    if (!message.trim()) errors.message = "Message cannot be empty.";
+
+    setErrors(errors);
+    return Object.keys(errors).length === 0;
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!validateForm()) return;
 
     const formData = { name, email, message };
 
@@ -26,6 +40,9 @@ const Contact = () => {
 
       if (response.ok) {
         setStatus("Message sent successfully!");
+        setName("");
+        setEmail("");
+        setMessage("");
       } else {
         setStatus("Failed to send message.");
       }
@@ -79,6 +96,9 @@ const Contact = () => {
               maxLength="50"
               className="input w-full input-bordered input-primary rounded-lg border border-gray-400 p-2"
             />
+            {errors.name && (
+              <p className="text-red-500 text-sm mt-1 absolute">{errors.name}</p>
+            )}
           </div>
 
           <div className="form-group block py-2">
@@ -90,6 +110,9 @@ const Contact = () => {
               type="email"
               placeholder="janedoe@example.zzz"
             />
+            {errors.email && (
+              <p className="text-red-500 text-sm mt-1 absolute">{errors.email}</p>
+            )}
           </div>
 
           <div className="form-group block py-2">
@@ -103,10 +126,13 @@ const Contact = () => {
               placeholder="Hi Mike, you're so cool and..."
               maxLength="1000">
             </textarea>
+            {errors.message && (
+              <p className="text-red-500 text-sm absolute">{errors.message}</p>
+            )}
           </div>
 
           <div className="form-group">
-            <button className="btn outline_btn" type="submit" onClick={handleSubmit}>
+            <button className="btn outline_btn mt-4" type="submit" onClick={handleSubmit}>
               Submit
             </button>
           </div>
