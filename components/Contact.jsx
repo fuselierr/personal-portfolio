@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from 'react'
 import Confetti from 'react-confetti'
+import { FaEnvelope, FaLinkedin, FaFacebook, FaDiscord } from 'react-icons/fa'
 
 const Contact = () => {
   const [isSubmitted, setSubmitted] = useState(false);
@@ -32,17 +33,34 @@ const Contact = () => {
   ) : (
     <section className="w-full py-12 flex flex-col items-center">
       <div className="py-4">
-          <h1 className="head_text">
+          <h1 className="head_text mb-8">
             Let's get in touch!
           </h1>
       </div>
-      <div className="w-full md:w-1/2 flex flex-col lg:flex-row items-start justify-between gap-12">
-        <div>
-          <h2 className="text-2xl font-bold mb-4">
-            My Socials
+      <div className="w-full max-w-screen-lg flex flex-col lg:flex-row items-start justify-between">
+        <div className="">
+          <h2 className="text-2xl font-bold mb-8 text-center">
+            My Socials:
           </h2>
+          <div className="grid grid-cols-2 gap-12 place-items-center mb-8">
+            <a href="mailto:mike.gao312@hotmail.com" className="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-300">
+              <FaEnvelope className="w-16 h-16"/>
+            </a>
+            <a href="https://www.linkedin.com/in/mikegao000" target="_blank" rel="noopener noreferrer" className="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-300">
+              <FaLinkedin className="w-16 h-16"/>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100010617818792" target="_blank" rel="noopener noreferrer" className="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-300">
+              <FaFacebook className="w-16 h-16"/>
+            </a>
+            <a href="https://discord.com/users/329346574629208064" target="_blank" rel="noopener noreferrer" className="opacity-50 hover:opacity-100 transform hover:scale-110 transition duration-300">
+              <FaDiscord className="w-16 h-16"/>
+            </a>
+          </div>
         </div>
-        <form onSubmit={handleSubmit} className="w-full lg:w-1/3">
+        <form onSubmit={handleSubmit} className="w-full lg:w-1/2">
+          <h2 className="text-2xl font-bold mb-4 text-center">
+              Shoot me a message!
+          </h2>
           <div className="form-group block py-2">
             <label htmlFor="name" className="block mb-2">Name:</label>
             <input
@@ -83,7 +101,7 @@ const Contact = () => {
 
           <div className="form-group">
             <button className="btn outline_btn" type="submit" onClick={handleSubmit}>
-              Send Message
+              Submit
             </button>
           </div>
         </form>
