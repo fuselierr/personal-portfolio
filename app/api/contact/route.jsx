@@ -5,6 +5,15 @@ export async function POST(req) {
         const body = await req.json(); // Parse the request body
         const { name, email, message } = body;
 
+        if (!name || !email || !message) {
+            return new Response(JSON.stringify({ message: "Cannot leave an empty field." }), { status: 400 });
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            return new Response(JSON.stringify({ message: "Invalid email address." }), { status: 400 });
+        }
+
         const transporter = nodemailer.createTransport({
             host: 'smtp.gmail.com',
             port: 465,
