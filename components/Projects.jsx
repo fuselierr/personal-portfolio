@@ -14,19 +14,26 @@ const Projects = () => {
       link: "https://git.uwaterloo.ca/mw2auyeu/team102-4",
     },
     {
+      title: "Phish-Eye Lens",
+      description: "Understand the qualms of password selection and phishing tactics through a hacker's lens. UofTHacks 12 Winner.",
+      image: '/assets/images/phisheyelens.png',
+      technologies: ["Javascript", "Typescript", "React", "Nextjs", "gemini", "Nodejs", "expressjs", "redis", "vercel"],
+      link: "https://dorahacks.io/buidl/21693"
+    },
+    {
       title: "Chess",
-      description: "A full-scale web application with working chess computers. *The source code is not available due to UW academic policies.",
+      description: "A chess application with various chess engine levels. *The source code is not available due to UW academic policies.",
       image: '/assets/images/chess.png',
       technologies: ["Cplusplus", "Python", "Flask"],
       link: "https://uwaterloo.ca/secretariat/policies-guidelines-signing-procedures"
     },
-    {
-      title: "Recursive Terrain Generator",
-      description: "A desktop program that mathematically generates terrain through algebraic formulas.",
-      image: '/assets/images/recursiveterrain.png',
-      technologies: ["Java", "Javascript", "React", "Nextjs", "Tailwindcss", "apache"],
-      link: "https://github.com/fuselierr/Recursive-Terrain"
-    }
+    // {
+    //   title: "Recursive Terrain Generator",
+    //   description: "A desktop program that mathematically generates terrain through algebraic formulas.",
+    //   image: '/assets/images/recursiveterrain.png',
+    //   technologies: ["Java", "Javascript", "React", "Nextjs", "Tailwindcss", "apache"],
+    //   link: "https://github.com/fuselierr/Recursive-Terrain"
+    // }
   ];
   return (
     <section className="flex-center flex-col py-16 justify-center mt-20">
