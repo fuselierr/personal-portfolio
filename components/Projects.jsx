@@ -21,19 +21,26 @@ const Projects = () => {
       link: "https://dorahacks.io/buidl/21693"
     },
     {
+      title: "NavigAIt",
+      description: "An AI-powered employee onboarding assistant that helps new hires navigate their digital workspace. GeeseHacks 2025 Winner.",
+      image: '/assets/images/navigait.png',
+      technologies: ["Javascript", "React", "Nextjs", "Nodejs", "expressjs", "Figma", "gemini", "googlecloud"],
+      link: "https://github.com/fuselierr/navigAIt"
+    },
+    {
       title: "Chess",
       description: "A chess application with various chess engine levels. *The source code is not available due to UW academic policies.",
       image: '/assets/images/chess.png',
-      technologies: ["Cplusplus", "Python", "Flask"],
+      technologies: ["Cplusplus", "Bash"],
       link: "https://uwaterloo.ca/secretariat/policies-guidelines-signing-procedures"
     },
-    // {
-    //   title: "Recursive Terrain Generator",
-    //   description: "A desktop program that mathematically generates terrain through algebraic formulas.",
-    //   image: '/assets/images/recursiveterrain.png',
-    //   technologies: ["Java", "Javascript", "React", "Nextjs", "Tailwindcss", "apache"],
-    //   link: "https://github.com/fuselierr/Recursive-Terrain"
-    // }
+    {
+      title: "Recursive Terrain Generator",
+      description: "A JFrame program that mathematically interpolates terrain through algebraic formulas.",
+      image: '/assets/images/recursiveterrain.png',
+      technologies: ["Java"],
+      link: "https://github.com/fuselierr/Recursive-Terrain"
+    }
   ];
   return (
     <section className="flex-center flex-col py-16 justify-center mt-20">
