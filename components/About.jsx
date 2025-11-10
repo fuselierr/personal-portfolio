@@ -24,17 +24,23 @@ const About = () => {
 
           <div className="w-full lg:w-1/3 flex flex-col items-start md:items-start px-8 order-1 lg:order-2" data-aos="fade-left">
             <p className="desc">
-                Hello! I'm Mike and I am currently pursuing my Bachelor's of Computer Science at the University of Waterloo.
-                Currently, I am on a study term and searching for internship opportunities for Summer 2026.
+              Hello! I'm Mike. I am a Computer Science student at the University of Waterloo with a strong focus on Artificial Intelligence and Software Engineering. I'm currently on a study term and actively seeking internship opportunities for <b>Summer 2026</b>.
             </p>
+
             <p className="desc">
-              I am passionate about AI innovation and Language Models and how to integrate such models to solve complex problems.
+              My core interests lie in <b>AI innovation</b>, <b>Large Language Models (LLMs)</b>, and the intersection of <b>machine learning and human-computer interaction</b>. I’m passionate about designing and implementing intelligent systems that push the boundaries of what technology can understand, create, and automate.
             </p>
+
             <p className="desc">
-                When I'm not learning new technical skills, I am making music and developing my culinary skills.
+              I enjoy experimenting with new frameworks, building end-to-end ML pipelines, and exploring how modern AI architectures can be applied to solve real-world problems efficiently and elegantly.
             </p>
+
+            <p className="desc">
+              Outside of tech, I’m a musician, volleyball enthusiast, and an aspiring chef - always learning, iterating, and improving in everything I do.
+            </p>
+
             <p className="desc mb-5">
-              Don't hesitate to reach out if you'd like to connect!
+              I’m always open to collaborations and new challenges. Do not hesitate to reach out if you’d like to connect or build something exciting together!
             </p>
           </div>
         </div>
