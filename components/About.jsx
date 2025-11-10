@@ -9,33 +9,32 @@ const About = () => {
             About Me
         </h2>
         <div className="w-full flex flex-col lg:flex-row items-center justify-center">
-          <div className="w-full lg:w-1/4 flex flex-col items-center justify-center px-8 mt-8 md:mt-0 order-2 lg:order-1" data-aos="fade-right">
+          <div className="w-full lg:w-1/3 flex flex-col items-center justify-center px-8 mt-8 md:mt-0 order-2 lg:order-1" data-aos="fade-right">
             <Image
-              src='/assets/images/mapotofu.jpg'
+              src='/assets/images/jpphoto.jpg'
               alt="mapo tofu"
-              width="400"
-              height="400"
+              width="600"
+              height="600"
               className="max-w-full h-auto rounded-2xl shadow-lg"
             />
             <p className="mt-4"> 
-              A pic of my mapo tofu for your visual enjoyment :)
+              Shibuya Sky, Tokyo, Japan
             </p>
           </div>
 
           <div className="w-full lg:w-1/3 flex flex-col items-start md:items-start px-8 order-1 lg:order-2" data-aos="fade-left">
             <p className="desc">
-                Thanks for stopping by! I'm Mike, and I'm currently pursuing my Bachelor's of Computer Science at the University of Waterloo.
-                Currently, I'm working as a Research Developer at DupliCALL Co.
+                Hello! I'm Mike and I am currently pursuing my Bachelor's of Computer Science at the University of Waterloo.
+                Currently, I am on a study term and searching for internship opportunities for Summer 2026.
             </p>
             <p className="desc">
-              I am super interested in AI and Language Models and how to integrate such models to solve complex problems.
+              I am passionate about AI innovation and Language Models and how to integrate such models to solve complex problems.
             </p>
             <p className="desc">
-                When I'm not learning new tech skills, I love making music and 
-                learning traditional Chinese dishes. My favourite cuisine has to be from Sichuan.
+                When I'm not learning new technical skills, I am making music and developing my culinary skills.
             </p>
             <p className="desc mb-5">
-              Enjoy your stay!
+              Don't hesitate to reach out if you'd like to connect!
             </p>
           </div>
         </div>
