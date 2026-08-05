@@ -7,6 +7,18 @@ import 'aos/dist/aos.css'
 const Projects = () => {
   const projects = [
     {
+      title: "Blast",
+      description: "A mobile puzzle game featuring campaign, classic, freeplay, daily challenge, custom level creation, and community-shared levels.",
+      image: "/assets/images/Blast.png",
+      technologies: [
+        "Csharp",
+        "unity",
+        "supabase",
+        "Postgresql",
+      ],
+      link: "https://github.com/Usaim-Hakim/cs446-project"
+    },
+    {
       title: "Timestamp",
       description: "Timestamp is a time-management app that helps you organize your plans and events: On time in no time.",
       image: '/assets/images/timestamp.png',

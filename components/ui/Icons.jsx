@@ -34,6 +34,9 @@ const Icons = ({ name }) => {
         expressjs: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
         vercel: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",
         gemini: '/assets/icons/google-gemini-icon.svg',
+        unity: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg",
+        supabase: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg",
+        Csharp: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
     };
 
     const iconUrl = icons[name.toLowerCase()];
