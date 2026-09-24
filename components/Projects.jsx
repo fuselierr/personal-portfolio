@@ -7,6 +7,15 @@ import 'aos/dist/aos.css'
 const Projects = () => {
   const projects = [
     {
+      title: "Athenaeum",
+      description: "An AR webapp that simulates virtual ebooks in stunning 3D environments.",
+      image: "/assets/images/Athenaeum.png",
+      technologies: [
+        "javascript", "Typescript", "Nodejs", "Threejs", "expressjs", "vitejs", "playwright", "supabase", "postgresql", "vercel"
+      ],
+      link: "https://athenaeum-seven.vercel.app"
+    },
+    {
       title: "Blast",
       description: "A mobile puzzle game featuring campaign, classic, freeplay, daily challenge, custom level creation, and community-shared levels.",
       image: "/assets/images/Blast.png",
